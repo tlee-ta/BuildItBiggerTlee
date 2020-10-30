@@ -30,7 +30,7 @@ public class MainActivityFragment extends Fragment {
         btnTellJoke.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new EndpointsAsyncTask().execute(new Pair<Context, String>(view.getContext(), "Joke"));
+                new EndpointsAsyncTask().execute(view.getContext());
             }
         });
 
